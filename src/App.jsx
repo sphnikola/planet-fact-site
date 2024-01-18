@@ -1,8 +1,10 @@
+import data from "./data/data.json";
 import mercury_img from "./assets/planet-mercury.svg";
 function App() {
+  console.log(data[0].name);
   return (
     <>
-      <main className="grid">
+      <main className="grid px-4 gap-y-8">
         <section className="text-white">
           <nav>
             <ul className="flex justify-between gap-x-4">
@@ -27,6 +29,10 @@ function App() {
         </section>
         <section className="place-self-center ">
           <img src={mercury_img} />
+        </section>
+        <section className="text-white text-center">
+          <h2 className="mb-3">{data[0].name}</h2>
+          <p>{data[0].overview.content}</p>
         </section>
       </main>
     </>
