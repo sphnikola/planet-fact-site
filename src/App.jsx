@@ -1,3 +1,4 @@
+import mercury_img from "./assets/planet-mercury.svg";
 function App() {
   return (
     <>
@@ -23,6 +24,9 @@ function App() {
             </ul>
           </nav>
           <hr className=" border-dotted bg-red-500" />
+        </section>
+        <section className="place-self-center ">
+          <img src={mercury_img} />
         </section>
       </main>
     </>
