@@ -46,6 +46,34 @@ function App() {
           <p>{data[0].overview.content}</p>
         </section>
       </main>
+      <footer className="px-4">
+        <section className=" text-white flex flex-col gap-y-3 md:grid md:grid-cols-12 md:gap-x-1">
+          <div className="md:col-start-1 md:col-end-4">
+            <div className="py-3 px-5 border-[1px] border-dotted flex justify-between md:flex-col ">
+              <h3>Rotation time</h3>
+              <p>53.6 days</p>
+            </div>
+          </div>
+          <div className="md:col-start-4 md:col-end-7">
+            <div className="py-3 px-5 border-[1px] border-dotted flex justify-between md:flex-col">
+              <h3>Rotation time</h3>
+              <p>53.6 days</p>
+            </div>
+          </div>
+          <div className="md:col-start-7 md:col-end-10">
+            <div className="py-3 px-5 border-[1px] border-dotted flex justify-between md:flex-col">
+              <h3>Rotation time</h3>
+              <p>53.6 days</p>
+            </div>
+          </div>
+          <div className="md:col-start-10 md:col-end-13">
+            <div className="py-3 px-5 border-[1px] border-dotted flex justify-between md:flex-col">
+              <h3>Rotation time</h3>
+              <p>53.6 days</p>
+            </div>
+          </div>
+        </section>
+      </footer>
     </>
   );
 }
