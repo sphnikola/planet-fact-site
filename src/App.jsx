@@ -4,8 +4,8 @@ function App() {
   console.log(data[0].name);
   return (
     <>
-      <main className="grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8">
-        <section className="text-white md:col-start-2">
+      <main className="grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto ">
+        <section className="text-white md:col-start-2  lg:col-start-3 lg:row-start-2">
           <nav className="md:hidden">
             <ul className="flex justify-between gap-x-4">
               <li>
@@ -38,10 +38,10 @@ function App() {
             </button>
           </div>
         </section>
-        <section className="place-self-center md:row-start-1 md:col-start-1 md:col-end-3">
-          <img src={mercury_img} />
+        <section className="place-self-center md:row-start-1 md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 ">
+          <img className="lg:relative lg:top-20" src={mercury_img} />
         </section>
-        <section className="text-white text-center md:col-start-1 md:row-start-2 md:text-left">
+        <section className="text-white text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
           <h2 className="mb-3">{data[0].name}</h2>
           <p>{data[0].overview.content}</p>
         </section>
