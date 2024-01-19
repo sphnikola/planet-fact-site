@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <main className="grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
-        <section className="text-white md:col-start-2  lg:col-start-3 lg:row-start-2">
+        <section className="text-white  md:col-start-2  lg:col-start-3 lg:row-start-2">
           <nav className="md:hidden">
             <ul className="flex justify-between gap-x-4">
               <li>
@@ -87,19 +87,19 @@ function App() {
             </button>
           </div>
         </section>
-        <section className="place-self-center md:row-start-1 md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 ">
+        <section className="mb-20 lg:mb-0 place-self-center md:row-start-1 md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 ">
           <div className="relative">
             // className="relative lg:top-20"
-            <img src={image} />{" "}
+            <img className="w-[173px] md:w-full" src={image} />{" "}
             {addInternal ? (
               <img
-                className="absolute left-[84px] top-[230px] w-[120px]"
+                className="absolute left-[48px] top-[150px] w-[80px] md:w-[120px]  md:top-[240px] md:left-[85px]"
                 src={mercury_geology_img}
               />
             ) : null}
           </div>
         </section>
-        <section className="text-white text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
+        <section className="text-white text-center  md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
           <h2 className="mb-3">{data[0].name}</h2>
           {answer}
           <p className="text-white mt-8 lg:mt-16">
