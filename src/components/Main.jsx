@@ -20,33 +20,6 @@ export function Main(props) {
                 handleClick={props.handleClick}
                 listItemName="geology"
               />
-              {/* <li>
-                <a
-                  onClick={handleClick}
-                  href="#"
-                  className=" focus:border-b-4 border-b-blue-400"
-                >
-                  overview
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={handleClick}
-                  href="#"
-                  className=" focus:border-b-4 border-b-blue-400"
-                >
-                  structure
-                </a>
-              </li>
-              <li>
-                <a
-                  onClick={handleClick}
-                  href="#"
-                  className=" focus:border-b-4 border-b-blue-400"
-                >
-                  geology
-                </a>
-              </li> */}
             </ul>
           </nav>
           <hr className="md:hidden border-dotted bg-red-500" />
@@ -63,24 +36,6 @@ export function Main(props) {
               handleClick={props.handleClick}
               buttonName="geology"
             />
-            {/* <button
-              onClick={handleClick}
-              className="text-white border-2 border-solid w-full"
-            >
-              overview
-            </button>
-            <button
-              onClick={handleClick}
-              className="text-white border-2 border-solid w-full"
-            >
-              structure
-            </button>
-            <button
-              onClick={handleClick}
-              className="text-white border-2 border-solid w-full"
-            >
-              geology
-            </button> */}
           </div>
         </section>
         <section className="mb-20 lg:mb-0 place-self-center md:row-start-1 md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 ">

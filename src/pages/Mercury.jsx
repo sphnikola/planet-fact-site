@@ -4,6 +4,7 @@ import mercury_img from "../assets/planet-mercury.svg";
 import mercury_internal_img from "../assets/planet-mercury-internal.svg";
 import mercury_geology_img from "../assets/geology-mercury.png";
 import { Main } from "../components/Main";
+
 export default function Mercury() {
   const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
   const [source, setSource] = useState(data[0].overview.source);
@@ -30,6 +31,7 @@ export default function Mercury() {
       setImage(mercury_img);
     }
   };
+
   return (
     <>
       <Main
