@@ -5,6 +5,7 @@ function App() {
   const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
   const [source, setSource] = useState(data[0].overview.source);
 
+  // import and set the images here
   const handleClick = (e) => {
     if (e.target.innerText === "overview") {
       setAnswer(<p>{data[0].overview.content}</p>);
