@@ -25,18 +25,30 @@ function App() {
           <nav className="md:hidden">
             <ul className="flex justify-between gap-x-4">
               <li>
-                <a href="#" className=" focus:border-b-4 border-b-blue-400">
+                <a
+                  onClick={handleClick}
+                  href="#"
+                  className=" focus:border-b-4 border-b-blue-400"
+                >
                   overview
                 </a>
               </li>
               <li>
-                <a href="#" className=" focus:border-b-4 border-b-blue-400">
-                  Structure
+                <a
+                  onClick={handleClick}
+                  href="#"
+                  className=" focus:border-b-4 border-b-blue-400"
+                >
+                  structure
                 </a>
               </li>
               <li>
-                <a href="#" className=" focus:border-b-4 border-b-blue-400">
-                  surface
+                <a
+                  onClick={handleClick}
+                  href="#"
+                  className=" focus:border-b-4 border-b-blue-400"
+                >
+                  geology
                 </a>
               </li>
             </ul>
