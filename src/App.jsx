@@ -1,38 +1,39 @@
-import { useState } from "react";
-import data from "./data/data.json";
-import mercury_img from "./assets/planet-mercury.svg";
-import mercury_internal_img from "./assets/planet-mercury-internal.svg";
-import mercury_geology_img from "./assets/geology-mercury.png";
+// import { useState } from "react";
+// import data from "./data/data.json";
+// import mercury_img from "./assets/planet-mercury.svg";
+// import mercury_internal_img from "./assets/planet-mercury-internal.svg";
+// import mercury_geology_img from "./assets/geology-mercury.png";
+import Mercury from "./pages/Mercury";
 function App() {
-  const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
-  const [source, setSource] = useState(data[0].overview.source);
-  const [image, setImage] = useState(mercury_img);
-  const [addInternal, setAddInternal] = useState(false);
+  // const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
+  // const [source, setSource] = useState(data[0].overview.source);
+  // const [image, setImage] = useState(mercury_img);
+  // const [addInternal, setAddInternal] = useState(false);
 
-  // import and set the images here
-  const handleClick = (e) => {
-    if (e.target.innerText === "overview") {
-      setAnswer(<p>{data[0].overview.content}</p>);
-      setSource(data[0].overview.source);
-      setImage(mercury_img);
-      setAddInternal(false);
-    } else if (e.target.innerText === "structure") {
-      setAnswer(<p>{data[0].structure.content}</p>);
-      setSource(data[0].structure.source);
-      setImage(mercury_internal_img);
-      setAddInternal(false);
-    } else if (e.target.innerText === "geology") {
-      setAnswer(<p>{data[0].geology.content}</p>);
-      setSource(data[0].geology.source);
-      //  setImage(mercury_geology_img);
-      setAddInternal(true);
-      setImage(mercury_img);
-    }
-  };
+  // // import and set the images here
+  // const handleClick = (e) => {
+  //   if (e.target.innerText === "overview") {
+  //     setAnswer(<p>{data[0].overview.content}</p>);
+  //     setSource(data[0].overview.source);
+  //     setImage(mercury_img);
+  //     setAddInternal(false);
+  //   } else if (e.target.innerText === "structure") {
+  //     setAnswer(<p>{data[0].structure.content}</p>);
+  //     setSource(data[0].structure.source);
+  //     setImage(mercury_internal_img);
+  //     setAddInternal(false);
+  //   } else if (e.target.innerText === "geology") {
+  //     setAnswer(<p>{data[0].geology.content}</p>);
+  //     setSource(data[0].geology.source);
+  //     //  setImage(mercury_geology_img);
+  //     setAddInternal(true);
+  //     setImage(mercury_img);
+  //   }
+  // };
 
   return (
     <>
-      <main className="grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
+      {/* <main className="grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
         <section className="text-white  md:col-start-2  lg:col-start-3 lg:row-start-2">
           <nav className="md:hidden">
             <ul className="flex justify-between gap-x-4">
@@ -109,7 +110,8 @@ function App() {
             </a>
           </p>
         </section>
-      </main>
+      </main> */}
+      <Mercury />
       <footer className="px-4 md:px-7 lg:max-w-6xl lg:mx-auto mt-10">
         <section className=" text-white flex flex-col gap-y-3 md:grid md:grid-cols-12 md:gap-x-1 lg:gap-x-8">
           <div className="md:col-start-1 md:col-end-4">
