@@ -49,9 +49,9 @@ function App() {
       <footer className="px-4">
         <section className=" text-white flex flex-col gap-y-3 md:grid md:grid-cols-12 md:gap-x-1">
           <div className="md:col-start-1 md:col-end-4">
-            <div className="py-3 px-5 border-[1px] border-dotted flex justify-between md:flex-col ">
-              <h3>Rotation time</h3>
-              <p>53.6 days</p>
+            <div className="py-3 px-5 border-[1px] border-dotted flex justify-between md:flex-col md:gap-y-10">
+              <h3 className="text-xs">Rotation time</h3>
+              <p className=" text-4xl">53.6 days</p>
             </div>
           </div>
           <div className="md:col-start-4 md:col-end-7">
