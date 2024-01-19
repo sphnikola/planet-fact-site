@@ -1,7 +1,23 @@
+import { useState } from "react";
 import data from "./data/data.json";
 import mercury_img from "./assets/planet-mercury.svg";
 function App() {
-  console.log(data[0].name);
+  const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
+  const [source, setSource] = useState(data[0].overview.source);
+
+  const handleClick = (e) => {
+    if (e.target.innerText === "overview") {
+      setAnswer(<p>{data[0].overview.content}</p>);
+      setSource(data[0].overview.source);
+    } else if (e.target.innerText === "structure") {
+      setAnswer(<p>{data[0].structure.content}</p>);
+      setSource(data[0].structure.source);
+    } else if (e.target.innerText === "geology") {
+      setAnswer(<p>{data[0].geology.content}</p>);
+      setSource(data[0].geology.source);
+    }
+  };
+
   return (
     <>
       <main className="grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
@@ -27,14 +43,23 @@ function App() {
           </nav>
           <hr className="md:hidden border-dotted bg-red-500" />
           <div className="hidden md:block md:space-y-4 md:mt-5 ">
-            <button className="text-white border-2 border-solid w-full">
+            <button
+              onClick={handleClick}
+              className="text-white border-2 border-solid w-full"
+            >
               overview
             </button>
-            <button className="text-white border-2 border-solid w-full">
+            <button
+              onClick={handleClick}
+              className="text-white border-2 border-solid w-full"
+            >
               structure
             </button>
-            <button className="text-white border-2 border-solid w-full">
-              surface
+            <button
+              onClick={handleClick}
+              className="text-white border-2 border-solid w-full"
+            >
+              geology
             </button>
           </div>
         </section>
@@ -43,10 +68,10 @@ function App() {
         </section>
         <section className="text-white text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
           <h2 className="mb-3">{data[0].name}</h2>
-          <p>{data[0].overview.content}</p>
+          {answer}
           <p className="text-white mt-8 lg:mt-16">
             source:
-            <a href={data[0].overview.source} className="underline">
+            <a href={source} className="underline">
               wikipedia
             </a>
           </p>
