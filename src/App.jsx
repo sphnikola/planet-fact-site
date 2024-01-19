@@ -1,21 +1,32 @@
 import { useState } from "react";
 import data from "./data/data.json";
 import mercury_img from "./assets/planet-mercury.svg";
+import mercury_internal_img from "./assets/planet-mercury-internal.svg";
+import mercury_geology_img from "./assets/geology-mercury.png";
 function App() {
   const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
   const [source, setSource] = useState(data[0].overview.source);
+  const [image, setImage] = useState(mercury_img);
+  const [addInternal, setAddInternal] = useState(false);
 
   // import and set the images here
   const handleClick = (e) => {
     if (e.target.innerText === "overview") {
       setAnswer(<p>{data[0].overview.content}</p>);
       setSource(data[0].overview.source);
+      setImage(mercury_img);
+      setAddInternal(false);
     } else if (e.target.innerText === "structure") {
       setAnswer(<p>{data[0].structure.content}</p>);
       setSource(data[0].structure.source);
+      setImage(mercury_internal_img);
+      setAddInternal(false);
     } else if (e.target.innerText === "geology") {
       setAnswer(<p>{data[0].geology.content}</p>);
       setSource(data[0].geology.source);
+      //  setImage(mercury_geology_img);
+      setAddInternal(true);
+      setImage(mercury_img);
     }
   };
 
@@ -77,7 +88,16 @@ function App() {
           </div>
         </section>
         <section className="place-self-center md:row-start-1 md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 ">
-          <img className="lg:relative lg:top-20" src={mercury_img} />
+          <div className="relative">
+            // className="relative lg:top-20"
+            <img src={image} />{" "}
+            {addInternal ? (
+              <img
+                className="absolute left-[84px] top-[230px] w-[120px]"
+                src={mercury_geology_img}
+              />
+            ) : null}
+          </div>
         </section>
         <section className="text-white text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
           <h2 className="mb-3">{data[0].name}</h2>
