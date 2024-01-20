@@ -1,4 +1,4 @@
-//work on navbar and try to fix the wiki link
+//work on navbar
 import { useState } from "react";
 import open from "../assets/icon-hamburger.svg";
 
