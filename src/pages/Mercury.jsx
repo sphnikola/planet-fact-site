@@ -4,6 +4,7 @@ import mercury_img from "../assets/planet-mercury.svg";
 import mercury_internal_img from "../assets/planet-mercury-internal.svg";
 import mercury_geology_img from "../assets/geology-mercury.png";
 import { Main } from "../components/Main";
+import { Footer } from "../components/Footer";
 
 export default function Mercury() {
   const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
@@ -43,6 +44,7 @@ export default function Mercury() {
         answer={answer}
         source={source}
       />
+      <Footer />
     </>
   );
 }
