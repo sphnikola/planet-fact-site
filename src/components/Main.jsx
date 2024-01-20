@@ -5,7 +5,7 @@ import sourceArrow from "../assets/icon-source.svg";
 export function Main(props) {
   return (
     <>
-      <main className="mt-20 grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
+      <main className="mt-5 md:mt-20 grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
         <section className="text-white  md:col-start-2  lg:col-start-3 lg:row-start-2">
           <nav className="md:hidden">
             <ul className="flex justify-between gap-x-4">
@@ -50,7 +50,7 @@ export function Main(props) {
             ) : null}
           </div>
         </section>
-        <section className="text-white text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
+        <section className=" text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
           <h2 className="mb-3 text-[2.5rem] leading-[100%] uppercase font-semibold md:text-[3rem] lg:text-[5rem] text-[hsl(0,0%,100%)]">
             {props.initialName}
           </h2>
