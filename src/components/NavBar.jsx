@@ -1,5 +1,4 @@
-// import img from 'next/image';
-// import Link from 'next/link';
+//work on navbar
 import { useState } from "react";
 import open from "../assets/icon-hamburger.svg";
 
