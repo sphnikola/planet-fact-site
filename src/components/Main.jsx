@@ -55,7 +55,7 @@ export function Main(props) {
             {props.initialName}
           </h2>
           {props.answer}
-          <p className=" leading-[25px] flex gap-x-1 text-xs mt-8 md:mt-[24px] lg:mt-16 text-[hsl(240,6%,54%)] lg:text-base">
+          <p className="text-center leading-[25px] flex gap-x-1 text-xs mt-8 md:mt-[24px] lg:mt-16 text-[hsl(240,6%,54%)] lg:text-base">
             source:
             <span className="flex items-center gap-x-2">
               <a
