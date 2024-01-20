@@ -1,5 +1,6 @@
 import { DescriptionListItems } from "./DescriptionListItems";
 import { DescriptionButtons } from "./DescriptionButtons";
+import sourceArrow from "../assets/icon-source.svg";
 
 export function Main(props) {
   return (
@@ -49,14 +50,22 @@ export function Main(props) {
             ) : null}
           </div>
         </section>
-        <section className="text-white text-center  md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
-          <h2 className="mb-3">{props.initialName}</h2>
+        <section className="text-white text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
+          <h2 className="mb-3 text-[2.5rem] leading-[100%] uppercase font-semibold md:text-[3rem] lg:text-[5rem] text-[hsl(0,0%,100%)]">
+            {props.initialName}
+          </h2>
           {props.answer}
-          <p className="text-white mt-8 lg:mt-16">
+          <p className=" leading-[25px] flex gap-x-1 text-xs mt-8 md:mt-[24px] lg:mt-16 text-[hsl(240,6%,54%)] lg:text-base">
             source:
-            <a href={props.source} className="underline">
-              wikipedia
-            </a>
+            <span className="flex items-center gap-x-2">
+              <a
+                href={props.source}
+                className="underline text-sm font-bold text-[hsl(240,6%,54%)] lg:text-base"
+              >
+                wikipedia
+              </a>
+              <img className=" object-contain" src={sourceArrow} />
+            </span>
           </p>
         </section>
       </main>
