@@ -8,7 +8,7 @@ export function Main(props) {
       <main className="mt-5 md:mt-20 grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
         <section className="text-white  md:col-start-2  lg:col-start-3 lg:row-start-2">
           <nav className="md:hidden">
-            <ul className="flex justify-between gap-x-4">
+            <ul className="flex justify-center gap-x-4">
               <DescriptionListItems
                 handleClick={props.handleClick}
                 listItemName="overview"
@@ -23,7 +23,7 @@ export function Main(props) {
               />
             </ul>
           </nav>
-          <hr className="md:hidden border-dotted bg-red-500" />
+          <hr className="md:hidden  border-[rgb(55,55,78)]  mt-5 " />
           <div className="hidden md:block md:space-y-4 md:mt-5 ">
             <DescriptionButtons
               handleClick={props.handleClick}
