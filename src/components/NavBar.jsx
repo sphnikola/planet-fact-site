@@ -66,6 +66,7 @@ function NavBar() {
             </div>
           </div>
         </div>
+        <hr className="  border-[rgb(55,55,78)] " />
       </nav>
     </div>
   );

@@ -5,7 +5,7 @@ import sourceArrow from "../assets/icon-source.svg";
 export function Main(props) {
   return (
     <>
-      <main className="mt-5 md:mt-20 grid px-4 gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
+      <main className="mt-5 md:mt-20 grid  gap-y-8 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 lg:grid-rows-auto md:px-7 lg:max-w-6xl lg:mx-auto">
         <section className="text-white  md:col-start-2  lg:col-start-3 lg:row-start-2">
           <nav className="md:hidden">
             <ul className="flex justify-center gap-x-4">
@@ -39,6 +39,7 @@ export function Main(props) {
             />
           </div>
         </section>
+
         <section className="mb-20 lg:mb-0 place-self-center md:row-start-1 md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 ">
           <div className="relative lg:mt-10">
             <img className="w-[173px] md:w-full" src={props.image} />{" "}
