@@ -41,25 +41,45 @@ function NavBar() {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className="h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white py-2 px-6 text-left border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+              <ul className="h-auto items-center justify-center text-xl md:text-base md:flex ">
+                <li className="pb-6  text-white py-2 px-6 text-left border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
                   <a href="#about" onClick={() => setNavbar(!navbar)}>
-                    About
+                    Mercury
                   </a>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-left border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+                <li className="pb-6  text-white py-2 px-6 text-left border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
                   <a href="#blog" onClick={() => setNavbar(!navbar)}>
-                    Blogs
+                    Venus
                   </a>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
                   <a href="#contact" onClick={() => setNavbar(!navbar)}>
-                    Contact
+                    Earth
                   </a>
                 </li>
-                <li className="pb-6 text-xl text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
                   <a href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Projects
+                    Mars
+                  </a>
+                </li>
+                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                    Jupiter
+                  </a>
+                </li>
+                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                    Saturn
+                  </a>
+                </li>
+                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                    Uranus
+                  </a>
+                </li>
+                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] md:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                    Neptune
                   </a>
                 </li>
               </ul>
