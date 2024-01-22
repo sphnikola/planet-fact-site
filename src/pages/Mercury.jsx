@@ -7,14 +7,7 @@ import { Main } from "../components/Main";
 import { Footer } from "../components/Footer";
 
 export default function Mercury() {
-  const [answer, setAnswer] = useState(
-    <p
-      className=" text-xs leading-[22px]  max-w-[500px] mx-auto text-[hsl(0,0%,100%,0.75)]
-  lg:text-base lg:leading-[25px]"
-    >
-      {data[0].overview.content}
-    </p>
-  );
+  const [answer, setAnswer] = useState(data[0].overview.content);
   const [source, setSource] = useState(data[0].overview.source);
   const [image, setImage] = useState(mercury_img);
   const [addInternal, setAddInternal] = useState(false);
@@ -22,38 +15,17 @@ export default function Mercury() {
   // import and set the images here
   const handleClick = (e) => {
     if (e.target.innerText === "overview") {
-      setAnswer(
-        <p
-          className=" text-xs leading-[22px]  max-w-[500px] mx-auto text-[hsl(0,0%,100%,0.75)]
-         lg:text-base lg:leading-[25px]"
-        >
-          {data[0].overview.content}
-        </p>
-      );
+      setAnswer(data[0].overview.content);
       setSource(data[0].overview.source);
       setImage(mercury_img);
       setAddInternal(false);
     } else if (e.target.innerText === "structure") {
-      setAnswer(
-        <p
-          className=" text-xs leading-[22px]  max-w-[500px] mx-auto text-[hsl(0,0%,100%,0.75)]
-      lg:text-base lg:leading-[25px]"
-        >
-          {data[0].structure.content}
-        </p>
-      );
+      setAnswer(data[0].structure.content);
       setSource(data[0].structure.source);
       setImage(mercury_internal_img);
       setAddInternal(false);
     } else if (e.target.innerText === "geology") {
-      setAnswer(
-        <p
-          className=" text-xs leading-[22px]  max-w-[500px] mx-auto text-[hsl(0,0%,100%,0.75)]
-      lg:text-base lg:leading-[25px]"
-        >
-          {data[0].geology.content}
-        </p>
-      );
+      setAnswer(data[0].geology.content);
       setSource(data[0].geology.source);
       //  setImage(mercury_geology_img);
       setAddInternal(true);

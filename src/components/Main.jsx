@@ -54,7 +54,13 @@ export function Main(props) {
           <h2 className="mb-3 text-[2.5rem] leading-[100%] uppercase font-semibold md:text-[3rem] lg:text-[5rem] text-[hsl(0,0%,100%)]">
             {props.initialName}
           </h2>
-          {props.answer}
+          <p
+            className=" text-xs leading-[22px]  max-w-[500px] mx-auto text-[hsl(0,0%,100%,0.75)]
+  lg:text-base lg:leading-[25px]"
+          >
+            {props.answer}
+          </p>
+          {/* {props.answer} */}
           <p
             className=" leading-[25px] flex justify-center gap-x-1 text-xs mt-8 md:mt-[24px] md:justify-start
            lg:mt-16 text-[hsl(240,6%,54%)] lg:text-base"
