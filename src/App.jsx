@@ -5,6 +5,8 @@
 // import mercury_geology_img from "./assets/geology-mercury.png";
 import Mercury from "./pages/Mercury";
 import NavBar from "./components/Navbar";
+import Venus from "./pages/Venus";
+
 function App() {
   // const [answer, setAnswer] = useState(<p>{data[0].overview.content}</p>);
   // const [source, setSource] = useState(data[0].overview.source);
@@ -113,7 +115,8 @@ function App() {
         </section>
       </main> */}
       <NavBar />
-      <Mercury />
+      <Venus />
+      {/* <Mercury /> */}
       {/* <footer className="px-4 md:px-7 lg:max-w-6xl lg:mx-auto mt-10">
         <section className=" text-white flex flex-col gap-y-3 md:grid md:grid-cols-12 md:gap-x-1 lg:gap-x-8">
           <div className="md:col-start-1 md:col-end-4">

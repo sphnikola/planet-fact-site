@@ -42,7 +42,7 @@ export function Main(props) {
 
         <section className="mb-20 lg:mb-0 place-self-center md:row-start-1 md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 ">
           <div className="relative lg:mt-10">
-            <img className="w-[173px] md:w-full" src={props.image} />{" "}
+            <img className="w-[173px] md:w-[290px]" src={props.image} />{" "}
             {props.addInternal ? (
               <img
                 className="absolute left-[48px] top-[150px] w-[80px] md:w-[120px]  md:top-[240px] md:left-[85px]"
