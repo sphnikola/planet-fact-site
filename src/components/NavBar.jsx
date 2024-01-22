@@ -1,6 +1,7 @@
 //work on navbar
 import { useState } from "react";
 import open from "../assets/icon-hamburger.svg";
+import chron from "../assets/icon-chevron.svg";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -42,44 +43,108 @@ function NavBar() {
               }`}
             >
               <ul className="h-auto items-center justify-center text-xl lg:text-base lg:flex ">
-                <li className="pb-6  text-white py-2 px-6 text-left border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#about" onClick={() => setNavbar(!navbar)}>
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#about"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Mercury
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
-                <li className="pb-6  text-white py-2 px-6 text-left border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#blog" onClick={() => setNavbar(!navbar)}>
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#blog"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Venus
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
-                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#contact" onClick={() => setNavbar(!navbar)}>
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#contact"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Earth
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
-                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#projects"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Mars
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
-                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#projects"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Jupiter
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
-                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#projects"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Saturn
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
-                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#projects"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
                     Uranus
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
-                <li className="pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
-                  <a href="#projects" onClick={() => setNavbar(!navbar)}>
-                    Neptune
+                <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
+                  <a
+                    href="#projects"
+                    className="flex justify-between items-center"
+                    onClick={() => setNavbar(!navbar)}
+                  >
+                    <span>Neptune</span>
+                    <img
+                      src={chron}
+                      className="lg:hidden object-contain w-[10px]"
+                    />
                   </a>
                 </li>
               </ul>
