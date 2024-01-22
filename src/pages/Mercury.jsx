@@ -14,17 +14,17 @@ export default function Mercury() {
 
   // import and set the images here
   const handleClick = (e) => {
-    if (e.target.innerText === "overview") {
+    if (e.target.innerText === "overview".toUpperCase()) {
       setAnswer(data[0].overview.content);
       setSource(data[0].overview.source);
       setImage(mercury_img);
       setAddInternal(false);
-    } else if (e.target.innerText === "structure") {
+    } else if (e.target.innerText === "internal structure".toUpperCase()) {
       setAnswer(data[0].structure.content);
       setSource(data[0].structure.source);
       setImage(mercury_internal_img);
       setAddInternal(false);
-    } else if (e.target.innerText === "geology") {
+    } else if (e.target.innerText === "surface geology".toUpperCase()) {
       setAnswer(data[0].geology.content);
       setSource(data[0].geology.source);
       //  setImage(mercury_geology_img);

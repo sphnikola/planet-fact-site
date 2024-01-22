@@ -15,11 +15,11 @@ export function Main(props) {
               />
               <DescriptionListItems
                 handleClick={props.handleClick}
-                listItemName="structure"
+                listItemName="internal structure"
               />
               <DescriptionListItems
                 handleClick={props.handleClick}
-                listItemName="geology"
+                listItemName="surface geology"
               />
             </ul>
           </nav>
@@ -31,11 +31,11 @@ export function Main(props) {
             />
             <DescriptionButtons
               handleClick={props.handleClick}
-              buttonName="structure"
+              buttonName="internal structure"
             />
             <DescriptionButtons
               handleClick={props.handleClick}
-              buttonName="geology"
+              buttonName="surface geology"
             />
           </div>
         </section>
