@@ -52,7 +52,7 @@ export function Main(props) {
           </div>
         </section>
         <section className=" text-center md:col-start-1 md:row-start-2 md:text-left lg:col-start-3 lg:row-start-1">
-          <h2 className="mb-3 text-[2.5rem] leading-[100%] uppercase font-semibold md:text-[3rem] lg:text-[5rem] text-[hsl(0,0%,100%)]">
+          <h2 className="mb-3  font-antonio text-[2.5rem] leading-[100%] font-medium uppercase md:text-[3rem] lg:text-[4rem] lg:tracking-tight text-[hsl(0,0%,100%)]">
             {props.initialName}
           </h2>
           <p
