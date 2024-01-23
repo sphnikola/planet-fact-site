@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Mercury from "./pages/Mercury";
 import NavBar from "./components/Navbar";
 import Venus from "./pages/Venus";
@@ -11,15 +12,20 @@ import Neptune from "./pages/Neptune";
 function App() {
   return (
     <>
-      <NavBar />
-      <Neptune />
-      {/* <Jupiter /> */}
-      {/* <Uranus /> */}
-      {/* <Saturn /> */}
-      {/* <Mars /> */}
-      {/* <Venus /> */}
-      {/* <Earth /> */}
-      {/* <Mercury /> */}
+      {/* <NavBar /> */}
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Mercury />} />
+          <Route path="venus" element={<Venus />} />
+          <Route path="earth" element={<Earth />} />
+          <Route path="mars" element={<Mars />} />
+          <Route path="jupiter" element={<Jupiter />} />
+          <Route path="saturn" element={<Saturn />} />
+          <Route path="uranus" element={<Uranus />} />
+          <Route path="neptune" element={<Neptune />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
