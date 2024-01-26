@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import open from "../assets/icon-hamburger.svg";
 import chron from "../assets/icon-chevron.svg";
 
-function NavBar() {
+export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
@@ -158,5 +158,3 @@ function NavBar() {
     </div>
   );
 }
-
-export default NavBar;
