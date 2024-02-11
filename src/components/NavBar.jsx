@@ -47,7 +47,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="/"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Mercury
@@ -60,7 +60,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="venus"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Venus
@@ -73,7 +73,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="earth"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Earth
@@ -86,7 +86,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="mars"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Mars
@@ -99,7 +99,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="jupiter"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Jupiter
@@ -112,7 +112,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="saturn"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Saturn
@@ -125,7 +125,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="uranus"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Uranus
@@ -138,7 +138,7 @@ export default function NavBar() {
                 <li className=" lg:pb-6  text-white py-2 px-6 text-left  border-b-[0.2px] lg:border-b-0    border-[rgb(55,55,78)]   ">
                   <Link
                     to="neptune"
-                    className="flex justify-between items-center"
+                    className="hover:border-b-2 hover:border-b-blue-200 flex justify-between items-center"
                     onClick={() => setNavbar(!navbar)}
                   >
                     <span>Neptune</span>
@@ -152,7 +152,8 @@ export default function NavBar() {
             </div>
           </div>
         </div>
-        <hr className={`${navbar && "hidden"} border-[rgb(55,55,78)]`} />
+        {/* <hr className={`${navbar && "hidden"} border-[rgb(55,55,78)]`} /> */}
+        <hr className="border-[rgb(55,55,78)] hidden lg:block" />
         {/* <hr className="  border-[rgb(55,55,78)] " /> */}
       </nav>
     </div>
